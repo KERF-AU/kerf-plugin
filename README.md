@@ -25,7 +25,7 @@ claude mcp add --transport http kerf https://kerf.au/mcp --header "Authorization
 ## What the skill can and cannot do
 
 - It can tell you whether KERF can cut a part, which stocked materials and thicknesses suit it, how to prepare the file so it prices first time, what a warning or refusal on a part card means, and how ordering, pickup and delivery work. It then sends you to https://kerf.au/quote, where you upload, confirm the measured size, choose the spec and pay.
-- With the MCP server connected (`.mcp.json` here points at `https://kerf.au/mcp`; set `KERF_API_KEY` to a key from your kerf.au account, see https://kerf.au/guides/developers) it can also upload a file, read the price, build a quote, return the checkout link and check an order. It never pays: checkout returns a link and the person pays.
+- With the MCP server connected (`.mcp.json` here points at `https://kerf.au/mcp`; set `KERF_API_KEY` to a key from your kerf.au account: sign in at kerf.au/quote, open your account and create one in the API keys section) it can also upload a file, read the price, build a quote, return the checkout link and check an order. It never pays: checkout returns a link and the person pays.
 - It never states a price, a tolerance or a stocked material that the site does not. If a fact is not documented, it says so and points to hello@kerf.au.
 
 ## Layout
