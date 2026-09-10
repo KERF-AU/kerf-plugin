@@ -1,8 +1,8 @@
 # KERF Agent Skill
 
-[KERF](https://kerf.au) is an online waterjet cutting service in Melbourne, Australia: upload a file, see the price in seconds, pay online, and the flat parts are cut in Dandenong South, then shipped Australia-wide or collected for free.
+[KERF](https://kerf.au) is an online waterjet cutting service in Melbourne, Australia: upload a file, see the price in seconds, pay online, and the flat parts are cut in Melbourne and shipped Australia-wide.
 
-This repository holds the KERF MCP configuration and the KERF Agent Skill, `skills/kerf`, for Claude Code, Codex, Cursor and any other agent that supports remote MCP servers and skills. It covers file preparation, materials and thicknesses, what moves the price, ordering, pickup and shipping, and the meaning of every check the quote workspace runs. It is written from the same guides a person reads at kerf.au, and it works with no connection to KERF at all.
+This repository holds the KERF MCP configuration and the KERF Agent Skill, `skills/kerf`, for Claude Code, Codex, Cursor and any other agent that supports remote MCP servers and skills. It covers file preparation, materials and thicknesses, what moves the price, ordering and shipping, and the meaning of every check the quote workspace runs. It is written from the same guides a person reads at kerf.au, and it works with no connection to KERF at all.
 
 ## Install
 

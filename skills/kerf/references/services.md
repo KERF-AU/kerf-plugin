@@ -1,6 +1,6 @@
 # KERF services and boundaries
 
-KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. Upload a file at https://kerf.au/quote, get a price in seconds, pay online, and the parts are cut at the facility in Dandenong South, Melbourne, then shipped Australia-wide or collected for free. Source: kerf.au guides and policies, September 2026.
+KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. Upload a file at https://kerf.au/quote, get a price in seconds, pay online, and the parts are cut in Melbourne and shipped Australia-wide. Source: kerf.au guides and policies, September 2026.
 
 ## What KERF cuts
 
@@ -31,17 +31,13 @@ KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. U
 
 ## Lead time
 
-Parts are cut within 9 business days of payment. Delivery time is on top. KERF emails when parts ship or are ready to collect. Do not promise a specific delivery date.
-
-## Pickup
-
-Free, from 138-140 Williams Rd, Dandenong South VIC 3175, Monday to Friday, 8:00 am to 4:00 pm. Chosen at checkout. Wait for the "Ready to collect" email before coming in; every part is cut to order.
+Parts are cut within 9 business days of payment. Delivery time is on top. KERF emails when parts ship. Do not promise a specific delivery date.
 
 ## Shipping
 
 Australia Post, Parcel Post or Express Post, chosen and paid at checkout. Delivery is calculated from the address and the actual weight of the parts (weight comes from the geometry, thickness and material density). The quote total is for the parts only.
 
-Oversize orders (over 22 kg or 1,050 mm long): checkout offers free pickup or "Please quote freight separately", where the parts are paid for first, KERF emails a freight price for the address, and the parts ship once that is paid.
+Oversize orders (over 22 kg or 1,050 mm long): checkout offers "Please quote freight separately", where the parts are paid for first, KERF emails a freight price for the address, and the parts ship once that is paid.
 
 ## Contact
 

@@ -22,11 +22,11 @@ A person reviews every file before it is cut. If a problem the automatic check m
 
 ## Checkout and payment
 
-Checkout opens KERF's online store (shop.kerf.au) with the quote's lines. Delivery or pickup is chosen there and paid with the parts. The agent never handles payment details; the person pays in the browser.
+Checkout opens KERF's online store (shop.kerf.au) with the quote's lines. Delivery is chosen there and paid with the parts. The agent never handles payment details; the person pays in the browser.
 
-## Lead time, pickup and shipping
+## Lead time and shipping
 
-See services.md: cut within 9 business days of payment, delivery on top; free pickup in Dandenong South; Australia Post rates by weight; oversize orders by pickup or a separate freight quote.
+See services.md: cut within 9 business days of payment, delivery on top; Australia Post rates by weight; oversize orders by a separate freight quote.
 
 ## Returns and problems
 
