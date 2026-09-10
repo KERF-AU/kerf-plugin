@@ -1,6 +1,6 @@
 # KERF MCP tool results
 
-Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, streamable HTTP, `Authorization: Bearer <API key>`). Every tool returns the same JSON the v1 REST API returns; an error comes back as `isError: true` with `{ error, code }`. Prices are AUD including GST; delivery is added at checkout.
+Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, streamable HTTP; sign in with OAuth, or send an API key as `Authorization: Bearer`). Every tool returns the same JSON the v1 REST API returns; an error comes back as `isError: true` with `{ error, code }`. Prices are AUD including GST; delivery is added at checkout.
 
 ## find_materials
 

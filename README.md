@@ -28,7 +28,7 @@ In Codex:
 codex mcp add kerf --url https://kerf.au/mcp --bearer-token-env-var KERF_API_KEY
 ```
 
-ChatGPT's custom connectors sign in with OAuth only, which KERF does not offer yet.
+Claude's and ChatGPT's custom connectors sign in instead of using a key: add `https://kerf.au/mcp` as a custom connector and approve it on kerf.au.
 
 ## What the skill can and cannot do
 
