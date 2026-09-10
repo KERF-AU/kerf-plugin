@@ -21,7 +21,7 @@ Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, strea
 
 - `items[]`: `part`, `material` (required), `thickness` (required; mm, a number), `quantity` (1 to 10000, default 1), `finish` (`as_cut` default, `deburred` for parts up to 200 mm), optional `name`. Up to 100 lines. A part's `defaults` are for the person to confirm; the server never fills a missing material or thickness in.
 - Refusals: `material_required`, `thickness_required`, `thickness_not_stocked` (carries `material` and `stocked[]`: show and ask), `material_unknown`, `quantity_invalid`, `finish_invalid`, `part_not_found`, `too_many_lines`.
-- Returns `quote`: `id` (KF-YYMM-XXXX), `name`, `status`, `priceBook`, `holdUntil` (prices held 14 days), `items[]` (`uid`, `part`, `partName`, `material`, `thickness`, `quantity`, `finish`, `priced`, `unitPrice`, `lineTotal`, `weightG`, `size`, `holes`, `heldPrice`), `total` (parts only), `checkoutReady`, `problems[]` (one sentence per line that cannot be ordered), `url` (the quote on kerf.au, shareable with the person).
+- Returns `quote`: `id` (KF-YYMM-XXXX), `name`, `status`, `priceBook`, `holdUntil` and `holdStatus` (`current` or `held`: prices held until `holdUntil`; `lapsed` or `unavailable`: `holdUntil` is null and these are today's prices, say so), `items[]` (`uid`, `part`, `partName`, `material`, `thickness`, `quantity`, `finish` as priced, with a `finishNote` when it differs from what was asked, `priced`, `unitPrice`, `lineTotal`, `weightG`, `size`, `holes`, `heldPrice`), `total` (parts only), `checkoutReady` (false once ordered), `problems[]` (one sentence per line that cannot be ordered), `url` (the quote on kerf.au, shareable with the person). A `finish_invalid` refusal with `maxPartMm` means the part is too large to deburr: offer `as_cut`.
 - `idempotency_key`: one key per write, reused only for an identical retry; a replay returns the same quote with `idempotentReplayed: true`. The same key with different arguments, or a quote's key reused on `checkout`, is `idempotency_key_reused`: mint a new key. A refusal is not remembered, so after fixing the quote the same key can be retried.
 
 ## get_quote, list_quotes, update_quote
@@ -31,12 +31,12 @@ Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, strea
 
 ## checkout
 
-- Returns `checkout`: `checkoutUrl`, `orderNumber`, `total`, `totalWeightG`, `expiresAt` (an unpaid checkout lives 7 days), `items[]`, `delivery` (`parcel`, or `quote_freight` with a `deliveryNote` when the order is over the parcel limits: tell the person the checkout offers no parcel rates and freight is quoted after the order), `mode`. Show the total and the link exactly; the person pays there and chooses the delivery service. Nothing is ordered until paid, and you never pay.
+- Returns `checkout`: `checkoutUrl`, `orderNumber`, `ref` (use either with `get_order`), `total` and `totalNote` (parts only), `totalWeightG`, `expiresAt` (an unpaid checkout lives 7 days), `items[]`, `delivery` (`parcel`, or `quote_freight` with a `deliveryNote` when the order is over the parcel limits: tell the person the checkout offers no parcel rates and freight is quoted after the order), `mode`. Show the total and the link exactly; the person pays there and chooses the delivery service. Nothing is ordered until paid, and you never pay.
 - `quote_not_ready` (with `problems[]`) when any line cannot be ordered; `quote_locked` when the quote was already paid; `rate_limited` (with the wait) after 30 checkouts in an hour; `idempotency_key_reused` when the key was used for another request.
 
 ## list_orders, get_order
 
-`status` is one of `awaiting_payment`, `expired`, `paid`, `shipped`, `cancelled`, `refunded`. Unpaid orders carry `checkoutUrl` and `expiresAt`; paid ones `paidAt`, then `shippedAt`, `tracking { company, number, url }` and `taxInvoiceUrl`. Do not imply an order was placed or paid unless its status says so.
+`status` is one of `awaiting_payment`, `expired`, `paid`, `shipped`, `cancelled`, `refunded`. Unpaid orders carry `checkoutUrl` and `expiresAt`; an `expired` one carries `expiredAt` and, when a newer checkout of the same quote replaced it, `supersededBy` (the new ref: that is the live pay link); paid ones `paidAt` (plus `amountPaid` and `shipping` when known), then `shippedAt`, `tracking { company, number, url }` and `taxInvoiceUrl`. `total` is the parts only (`totalNote` says so); `delivery` is `parcel` or `quote_freight`. `get_order` takes the `ref` or the order number as printed (`#K1007`). Do not imply an order was placed or paid unless its status says so.
 
 ## Limits
 
