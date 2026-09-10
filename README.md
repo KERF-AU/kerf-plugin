@@ -22,6 +22,14 @@ For the MCP tools in Claude Code:
 claude mcp add --transport http kerf https://kerf.au/mcp --header "Authorization: Bearer $KERF_API_KEY"
 ```
 
+In Codex:
+
+```bash
+codex mcp add kerf --url https://kerf.au/mcp --bearer-token-env-var KERF_API_KEY
+```
+
+ChatGPT's custom connectors sign in with OAuth only, which KERF does not offer yet.
+
 ## What the skill can and cannot do
 
 - It can tell you whether KERF can cut a part, which stocked materials and thicknesses suit it, how to prepare the file so it prices first time, what a warning or refusal on a part card means, and how ordering and delivery work. It then sends you to https://kerf.au/quote, where you upload, confirm the measured size, choose the spec and pay.
