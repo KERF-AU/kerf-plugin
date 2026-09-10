@@ -24,7 +24,7 @@ Do not invent tolerances, kerf widths, minimum feature sizes, lead times, prices
 1. Confirm the files, quantities, material, thickness and finish. Ask only for what affects the price. A missing finish means as cut.
 2. Call `find_materials` with the material and thickness. A `no_exact_match` lists the stocked thicknesses: show them and ask. Never substitute.
 3. Call `create_upload` once per file and PUT the file bytes to `upload_url` from a shell. Do not read the file into the conversation or send base64 through a tool. The PUT response is the measured part; if `cuttable` is false, explain `errors` in the workspace's words (dfm-review.md) and stop there for that part.
-4. Call `create_quote` once with the part ids and exact material, thickness and quantity. Use one `idempotency_key` per quote so a retry cannot create a duplicate.
+4. Call `create_quote` once with the part ids and exact material, thickness and quantity, every one named (the server refuses a line that leaves material or thickness to it). Use one `idempotency_key` per quote so a retry cannot create a duplicate; `checkout` gets a key of its own, never the quote's.
 5. Report the quote id, each line's unit price and quantity, the total, `holdUntil`, and `url`. Say the total is for the parts only and delivery is added at checkout. Quote the numbers exactly.
 6. If the person wants to order, call `checkout` and hand them `checkoutUrl` with the total. You never pay and never say an order was placed until `get_order` shows it paid.
 
