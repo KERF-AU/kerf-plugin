@@ -1,4 +1,11 @@
 interface:
   display_name: "KERF"
-  short_description: "Prepare flat parts for KERF, Melbourne's online waterjet cutting service"
-  default_prompt: "Use $kerf to check whether KERF can cut these files and how to prepare them for a quote at kerf.au/quote."
+  short_description: "Quote and order waterjet-cut flat parts from KERF (Melbourne)"
+  default_prompt: "Use $kerf to price these files at KERF or answer my KERF cutting question."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "kerf"
+      description: "KERF quotes, checkout links and order status"
+      transport: "streamable_http"
+      url: "https://kerf.au/mcp"

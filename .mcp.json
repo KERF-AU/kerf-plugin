@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "kerf": {
+      "type": "http",
+      "url": "https://kerf.au/mcp",
+      "headers": { "Authorization": "Bearer ${KERF_API_KEY}" },
+      "note": "KERF MCP server: quote and order waterjet-cut flat parts from kerf.au. Set KERF_API_KEY to a key minted from your kerf.au account (see https://kerf.au/guides/developers). The agent never pays; checkout returns a link."
+    }
+  }
+}
