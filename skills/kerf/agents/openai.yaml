@@ -1,0 +1,4 @@
+interface:
+  display_name: "KERF"
+  short_description: "Prepare flat parts for KERF, Melbourne's online waterjet cutting service"
+  default_prompt: "Use $kerf to check whether KERF can cut these files and how to prepare them for a quote at kerf.au/quote."

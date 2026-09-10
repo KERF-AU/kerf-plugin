@@ -1,0 +1,26 @@
+{
+    "name": "kerf-plugin",
+    "version": "0.1.0",
+    "description": "Connect an AI agent to KERF, Melbourne's online waterjet cutting service: file preparation, materials and thicknesses, pricing factors, ordering, pickup and shipping, and design-for-cutting guidance for flat parts.",
+    "author": {
+        "name": "KERF CUTTING",
+        "url": "https://kerf.au",
+        "email": "hello@kerf.au"
+    },
+    "license": "MIT",
+    "keywords": [
+        "kerf",
+        "waterjet-cutting",
+        "water-jet-cutting",
+        "online-cutting-service",
+        "flat-parts",
+        "sheet-metal",
+        "dxf",
+        "step-files",
+        "quoting",
+        "melbourne",
+        "australia",
+        "manufacturing"
+    ],
+    "repository": "https://github.com/kerf-au/kerf-plugin"
+}
