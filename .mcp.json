@@ -3,8 +3,7 @@
     "kerf": {
       "type": "http",
       "url": "https://kerf.au/mcp",
-      "headers": { "Authorization": "Bearer ${KERF_API_KEY}" },
-      "note": "KERF MCP server: quote and order waterjet-cut flat parts from kerf.au. Set KERF_API_KEY to a key minted from your kerf.au account (see https://kerf.au/guides/developers). The agent never pays; checkout returns a link."
+      "note": "KERF MCP server: quote and order waterjet-cut flat parts from kerf.au. Sign in with OAuth when your agent asks (in Claude Code, /mcp then Authenticate). For a machine with no browser, add a headers block with Authorization: Bearer and an API key from your kerf.au account. The agent never pays; checkout returns a link."
     }
   }
 }

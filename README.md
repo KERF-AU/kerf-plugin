@@ -16,24 +16,25 @@ or the skill alone:
 npx skills add kerf-au/kerf-plugin --skill kerf
 ```
 
-For the MCP tools in Claude Code:
+For the MCP tools in Claude Code, then `/mcp` and Authenticate (you sign in on kerf.au):
 
 ```bash
-claude mcp add --transport http kerf https://kerf.au/mcp --header "Authorization: Bearer $KERF_API_KEY"
+claude mcp add --transport http kerf https://kerf.au/mcp
 ```
 
 In Codex:
 
 ```bash
-codex mcp add kerf --url https://kerf.au/mcp --bearer-token-env-var KERF_API_KEY
+codex mcp add kerf --url https://kerf.au/mcp
+codex mcp login kerf
 ```
 
-Claude's and ChatGPT's custom connectors sign in instead of using a key: add `https://kerf.au/mcp` as a custom connector and approve it on kerf.au.
+Claude's and ChatGPT's custom connectors sign in the same way: add `https://kerf.au/mcp` as a custom connector and approve it on kerf.au. For a machine with no browser, create an API key in your kerf.au account card and send it as `Authorization: Bearer` (Claude Code `--header`, Codex `--bearer-token-env-var KERF_API_KEY`).
 
 ## What the skill can and cannot do
 
 - It can tell you whether KERF can cut a part, which stocked materials and thicknesses suit it, how to prepare the file so it prices first time, what a warning or refusal on a part card means, and how ordering and delivery work. It then sends you to https://kerf.au/quote, where you upload, confirm the measured size, choose the spec and pay.
-- With the MCP server connected (`.mcp.json` here points at `https://kerf.au/mcp`; set `KERF_API_KEY` to a key from your kerf.au account: sign in at kerf.au/quote, open your account and create one in the API keys section) it can also upload a file, read the price, build a quote, return the checkout link and check an order. It never pays: checkout returns a link and the person pays.
+- With the MCP server connected (`.mcp.json` here points at `https://kerf.au/mcp`; sign in when your agent asks) it can also upload a file, read the price, build a quote, return the checkout link and check an order. It never pays: checkout returns a link and the person pays.
 - It never states a price, a tolerance or a stocked material that the site does not. If a fact is not documented, it says so and points to hello@kerf.au.
 
 ## Layout
