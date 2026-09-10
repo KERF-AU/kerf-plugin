@@ -17,6 +17,8 @@ Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, strea
 
 `id` (starts with `up`), `name`, `format`, `size { widthMm, heightMm }`, `cutLengthMm`, `pierces`, `areaMm2`, `netAreaMm2`, `holes` (text), `cuttable`, `errors[]`, `warnings[]`, `defaults { material, thickness, finish }`, and for STEP `modelThicknessMm`. `cuttable: false` means the part can be quoted but not ordered; `errors` say why in the workspace's own words (see dfm-review.md). A `modelThicknessMm` sets the default thickness; confirm it with the person. Upload refusals: `format_unsupported`, `file_empty`, `conversion_failed` (a bent or unreadable file, with the message), `converter_busy` (retry in a few seconds), `too_complex`, `storage_full`.
 
+- `list_parts` leaves archived parts out unless `include_archived` is true; a part carries `archived: true` or `resized` (a scale) when the person did that in the workspace. Uploading the same bytes as an archived part brings it back (`existing: true, unarchived: true`). An `upload_not_found` on the PUT can also mean the service restarted since the URL was issued: call `create_upload` again.
+
 ## create_quote
 
 - `items[]`: `part`, `material` (required), `thickness` (required; mm, a number), `quantity` (1 to 10000, default 1), `finish` (`as_cut` default, `deburred` for parts up to 200 mm), optional `name`. Up to 100 lines. A part's `defaults` are for the person to confirm; the server never fills a missing material or thickness in.
