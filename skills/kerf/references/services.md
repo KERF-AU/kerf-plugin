@@ -26,7 +26,7 @@ KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. U
 | Lines per quote | 100 |
 | Quantity per line | 1 to 10,000 whole parts |
 | Deburring | Parts up to 200 mm in any dimension |
-| Parcel delivery | Up to 22 kg per order and 1,050 mm on the longest side; over either, pickup or a separate freight quote |
+| Parcel delivery | Up to 22 kg per order and 1,050 mm on the longest side; over either, the parts are paid for first and KERF emails a courier quote for the address after the order |
 | Minimum order | None |
 
 ## Lead time

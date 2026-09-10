@@ -38,7 +38,7 @@ Every ordered part is saved to the customer's parts library. Sign-in is by an em
 
 ## Tax invoices
 
-Every paid order has a tax invoice PDF in Order history (Orders in the quote workspace, then Tax invoice). It shows KERF CUTTING's ABN, the GST included and everything paid, delivery included. An order confirmation email arrives on payment and a second email when parts ship or are ready to collect.
+Every paid order has a tax invoice PDF in Order history (Orders in the quote workspace, then Tax invoice). It shows KERF CUTTING's ABN, the GST included and everything paid, delivery included. An order confirmation email arrives on payment and a second email when parts ship.
 
 ## Files and intellectual property
 

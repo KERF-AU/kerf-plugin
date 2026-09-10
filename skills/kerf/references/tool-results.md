@@ -31,12 +31,12 @@ Field-level behaviour of the KERF MCP tools (server `https://kerf.au/mcp`, strea
 
 ## checkout
 
-- Returns `checkout`: `checkoutUrl`, `orderNumber`, `total`, `totalWeightG`, `expiresAt` (an unpaid checkout lives 7 days), `items[]`, `mode`. Show the total and the link exactly; the person pays there and chooses delivery or pickup. Nothing is ordered until paid, and you never pay.
+- Returns `checkout`: `checkoutUrl`, `orderNumber`, `total`, `totalWeightG`, `expiresAt` (an unpaid checkout lives 7 days), `items[]`, `mode`. Show the total and the link exactly; the person pays there and chooses the delivery service. Nothing is ordered until paid, and you never pay.
 - `quote_not_ready` (with `problems[]`) when any line cannot be ordered; `quote_locked` when the quote was already paid.
 
 ## list_orders, get_order
 
-`status` is one of `awaiting_payment`, `expired`, `paid`, `shipped`, `ready_to_collect`, `cancelled`, `refunded`. Unpaid orders carry `checkoutUrl` and `expiresAt`; paid ones `paidAt`, then `shippedAt`, `pickup`, `tracking { company, number, url }` and `taxInvoiceUrl`. Do not imply an order was placed or paid unless its status says so.
+`status` is one of `awaiting_payment`, `expired`, `paid`, `shipped`, `cancelled`, `refunded`. Unpaid orders carry `checkoutUrl` and `expiresAt`; paid ones `paidAt`, then `shippedAt`, `tracking { company, number, url }` and `taxInvoiceUrl`. Do not imply an order was placed or paid unless its status says so.
 
 ## Limits
 

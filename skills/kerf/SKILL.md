@@ -41,7 +41,7 @@ Read [tool-results.md](references/tool-results.md) before handling `no_exact_mat
 
 ## Answer ordering questions
 
-Use [ordering.md](references/ordering.md) for prices and GST, the 14-day price hold, the 7-day life of an unpaid checkout, the review before cutting, refunds, lead time, pickup, shipping, oversize orders, reorders, tax invoices and file ownership. Use [services.md](references/services.md) for contact details and hours.
+Use [ordering.md](references/ordering.md) for prices and GST, the 14-day price hold, the 7-day life of an unpaid checkout, the review before cutting, refunds, lead time, shipping, oversize orders, reorders, tax invoices and file ownership. Use [services.md](references/services.md) for contact details and hours.
 
 Do not say an order has been placed, paid or scheduled unless the person tells you so. Do not promise a delivery date; state the production window and that delivery time is on top.
 
@@ -58,7 +58,7 @@ Do not say an order has been placed, paid or scheduled unless the person tells y
 | --- | --- |
 | Formats, units, contours, layers, text, nesting, STEP and IGES, rejection reasons | [file-preparation.md](references/file-preparation.md) |
 | Materials, thicknesses, finishes, weight, what is by request | [materials.md](references/materials.md) |
-| What KERF cuts, boundaries, size and quantity limits, lead time, pickup, shipping, contact | [services.md](references/services.md) |
+| What KERF cuts, boundaries, size and quantity limits, lead time, shipping, contact | [services.md](references/services.md) |
 | Pricing factors, price hold, checkout, payment, review, refunds, reorders, invoices, IP | [ordering.md](references/ordering.md) |
 | Warnings and refusals the workspace shows, and the documented fixes | [dfm-review.md](references/dfm-review.md) |
 | MCP tool fields, statuses, suggestions, refusals, idempotency, limits | [tool-results.md](references/tool-results.md) |
