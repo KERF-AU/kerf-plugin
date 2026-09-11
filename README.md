@@ -22,6 +22,8 @@ For the MCP tools in Claude Code, then `/mcp` and Authenticate (you sign in on k
 claude mcp add --transport http kerf https://kerf.au/mcp
 ```
 
+Claude Code may ask before the `checkout` tool runs, since that is the one call that creates something outside the conversation (an unpaid draft in the shop, which expires on its own). Approve it when asked, or add `mcp__kerf__checkout` to the allow list in your Claude Code permissions. Every other tool declares itself read-only or non-destructive and runs without a prompt.
+
 In Codex:
 
 ```bash
