@@ -2,8 +2,7 @@
   "mcpServers": {
     "kerf": {
       "type": "http",
-      "url": "https://kerf.au/mcp",
-      "note": "KERF MCP server: quote and order waterjet-cut flat parts from kerf.au. Sign in with OAuth when your agent asks (in Claude Code, /mcp then Authenticate). For a machine with no browser, add a headers block with Authorization: Bearer and an API key from your kerf.au account. The agent never pays; checkout returns a link."
+      "url": "https://kerf.au/mcp"
     }
   }
 }

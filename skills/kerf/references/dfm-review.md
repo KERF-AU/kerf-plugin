@@ -37,4 +37,4 @@ Checkout refuses the whole quote, and says why, if any line has a problem: an un
 
 - A refusal blocks the price. Fix the file or use "Get help fixing it" on the part, which sends the file and the problem to KERF.
 - A warning does not block the price. The only one that changes what is cut is size, so always have the person confirm the measured width and height before ordering.
-- Nothing here is exhaustive: a person at KERF reviews every file before cutting and contacts the customer if the automatic check missed something.
+- Nothing here is exhaustive: every file is checked before cutting, and KERF contacts the customer if the automatic check missed something.

@@ -18,7 +18,7 @@ Source: kerf.au/guides/ordering and kerf.au/terms, September 2026.
 
 ## Review before cutting
 
-A person reviews every file before it is cut. If a problem the automatic check missed is found, KERF contacts the customer before cutting. If an instant price turns out to be wrong (a mis-measured file, a mis-priced material or thickness), KERF tells the customer before cutting and gives the corrected price; the customer accepts it or cancels that part for a full refund. KERF never cuts and charges more without asking first.
+Every file is checked before it is cut. If a problem the automatic check missed is found, KERF contacts the customer before cutting. If an instant price turns out to be wrong (a mis-measured file, a mis-priced material or thickness), KERF tells the customer before cutting and gives the corrected price; the customer accepts it or cancels that part for a full refund. KERF never cuts and charges more without asking first.
 
 ## Checkout and payment
 
