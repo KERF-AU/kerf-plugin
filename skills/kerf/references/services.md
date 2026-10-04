@@ -24,9 +24,9 @@ KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. U
 | File size | 25 MB per file |
 | Part size | 4,000 mm in any dimension for an instant price; the standard bed is 3200 × 1600 mm and a larger part is confirmed before cutting |
 | Lines per quote | 100 |
-| Quantity per line | 1 to 10,000 whole parts |
+| Quantity per line | 1 to 100 whole parts; larger runs by email to hello@kerf.au |
 | Deburring | Parts up to 200 mm in any dimension |
-| Parcel delivery | Up to 22 kg per order and 1,050 mm on the longest side; over either, the parts are paid for first and KERF emails a courier quote for the address after the order |
+| Parcel delivery | Up to 22 kg per order and 1,000 mm on the longest side; over either, the parts are paid for first and KERF emails a courier quote for the address after the order |
 | Minimum order | None |
 
 ## Lead time
@@ -37,7 +37,7 @@ Parts are cut within 9 business days of payment. Delivery time is on top. KERF e
 
 Australia Post, Parcel Post or Express Post, chosen and paid at checkout. Delivery is calculated from the address and the actual weight of the parts (weight comes from the geometry, thickness and material density). The quote total is for the parts only.
 
-Oversize orders (over 22 kg or 1,050 mm long): checkout offers "Please quote freight separately", where the parts are paid for first, KERF emails a freight price for the address, and the parts ship once that is paid.
+Oversize orders (over 22 kg or 1,000 mm long): checkout offers "Please quote freight separately", where the parts are paid for first, KERF emails a freight price for the address, and the parts ship once that is paid.
 
 ## Contact
 

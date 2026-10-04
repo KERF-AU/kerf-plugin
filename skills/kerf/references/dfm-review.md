@@ -31,7 +31,7 @@ The quote workspace checks every file the moment it lands and shows one of four 
 
 ## Checkout refusals
 
-Checkout refuses the whole quote, and says why, if any line has a problem: an unknown part, a part flagged "can't cut yet", a design file that did not save ("upload it again"), an invalid quantity (whole numbers 1 to 10,000), an unknown material or thickness, a part that cannot be measured in time ("simplify the file, or email it"), or a part over 4,000 mm. More than 100 lines on one quote is refused. Fix or remove the line named, then Checkout again.
+Checkout refuses the whole quote, and says why, if any line has a problem: an unknown part, a part flagged "can't cut yet", a design file that did not save ("upload it again"), an invalid quantity (whole numbers 1 to 100; larger runs by email to hello@kerf.au), an unknown material or thickness, a part that cannot be measured in time ("simplify the file, or email it"), or a part over 4,000 mm. More than 100 lines on one quote is refused. Fix or remove the line named, then Checkout again.
 
 ## Severity, in plain terms
 

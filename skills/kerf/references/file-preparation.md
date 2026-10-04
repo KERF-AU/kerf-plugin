@@ -33,6 +33,8 @@ Fonts do not travel with a file. Convert text to outlines (paths, curves) before
 
 One part per file. Each upload becomes one part with its own material, thickness, quantity and price. Quantity is set on the quote; do not repeat an outline ten times to order ten. A drawing with several disconnected outlines prices as a single part, which is rarely wanted; split it into separate files and upload them together.
 
+Material is priced on the bounding rectangle each part takes on the sheet, not the part's own area. The exception to one part per file is shapes that fit inside each other (crescents, triangles): drawn nested in one file, they share one rectangle and cost less in material than separate uploads. They must not touch.
+
 ## STEP and IGES
 
 3D files are checked for flatness before pricing. A flat part prices instantly and, for STEP, the thickness is read from the model (the person confirms it; do not treat it as chosen). Bent, folded or machined parts cannot be priced automatically: export the flat pattern and KERF cuts the blank, or email the file.

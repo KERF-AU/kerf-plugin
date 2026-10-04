@@ -1,6 +1,6 @@
 ---
 name: kerf
-description: Prepare and check flat parts for KERF, the online waterjet cutting service in Melbourne, Australia (kerf.au). Use when the user asks whether KERF can cut a part; how to prepare a DXF, DWG, SVG, AI, PDF, EPS, STEP or IGES file for cutting; which materials and thicknesses KERF stocks (aluminium, stainless, mild steel, corten, brass, copper); what moves the price; how ordering, Australia-wide shipping, lead time, reorders or tax invoices work; why a file was refused or warned about; or how to design a part for waterjet cutting. Uses the KERF MCP tools when connected (upload, price, quote, checkout link, order status) and works without them; prices come only from a quote.
+description: Prepare and check flat parts for KERF, the online waterjet cutting service in Melbourne, Australia (kerf.au). Use when the user asks whether KERF can cut a part; how to prepare a DXF, DWG, SVG, AI, PDF, EPS, STEP or IGES file for cutting; which materials and thicknesses KERF stocks (aluminium, stainless, mild steel, brass, copper); what moves the price; how ordering, Australia-wide shipping, lead time, reorders or tax invoices work; why a file was refused or warned about; or how to design a part for waterjet cutting. Uses the KERF MCP tools when connected (upload, price, quote, checkout link, order status) and works without them; prices come only from a quote.
 ---
 
 # KERF
@@ -35,7 +35,7 @@ Read [tool-results.md](references/tool-results.md) before handling `no_exact_mat
 1. Classify the part: flat, constant thickness, one closed outer outline with closed holes. If it has bends, a varying thickness or a 3D form, say so and offer the flat-pattern route.
 2. Check the file against [file-preparation.md](references/file-preparation.md): format, units, closed contours, text converted to outlines, nothing but cut geometry in the file, one part per file.
 3. Check the spec against [materials.md](references/materials.md): the material is stocked in the thickness asked for. Never substitute a nearby grade or thickness silently; show the stocked options and ask.
-4. Check the limits in [services.md](references/services.md): 25 MB per file, 4,000 mm in any dimension, 100 lines per quote, 10,000 per line, parcel limits for delivery.
+4. Check the limits in [services.md](references/services.md): 25 MB per file, 4,000 mm in any dimension, 100 lines per quote, 100 per line (larger runs by email), parcel limits for delivery.
 5. Tell the person exactly what to do at https://kerf.au/quote: upload, confirm the measured size on the part card, pick material, thickness, finish and quantity, read the price, Checkout. No account is needed. Quantity is set on the quote, not by repeating the outline in the file.
 6. If the workspace flagged the file, read [dfm-review.md](references/dfm-review.md) and explain the flag in the site's own words. Do not guess at fixes the references do not give.
 

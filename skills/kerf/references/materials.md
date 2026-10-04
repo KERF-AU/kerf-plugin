@@ -4,17 +4,20 @@ Source: the kerf.au quote workspace's material table, September 2026. Thickness 
 
 ## Stocked metals and thicknesses (mm)
 
+<!--kerf:materials-table-->
 | Material | Site key | Thicknesses | Site note |
 | --- | --- | --- | --- |
-| Aluminium 5083 | alu5083 | 1.6, 3, 6, 10, 12 | Marine grade, lives outdoors untreated, weldable |
-| Aluminium 5052 | alu5052 | 1.6, 3, 6 | General-purpose aluminium, light and easy to form |
-| Aluminium 6061 | alu6061 | 3, 6, 10, 12 | Structural aluminium, strong, machines cleanly |
-| Stainless 304 | ss304 | 1.6, 3, 6, 10 | The everyday stainless, hard-wearing, food-safe |
-| Stainless 316 | ss316 | 1.6, 3, 6 | Marine stainless, best corrosion resistance, coastal-proof |
-| Mild steel (grade 250) | steel250 | 1.6, 3, 6, 10, 12 | Strong and economical, paint or coat it for outdoor use |
-| Corten | corten | 3, 6, 10 | Weathers to a stable rust patina, outdoor feature pieces |
-| Brass | brass | 1.6, 3 | Warm gold tone, decorative, develops a patina |
-| Copper | copper | 1.6, 3 | Distinctive and conductive, patinas over time |
+| Aluminium 5005 | alu5005 | 1.6, 3, 4, 5, 6 | Soft general-purpose aluminium, easy to form, good for panels and signs |
+| Aluminium 5083 | alu5083 | 3, 4, 5, 6, 8, 10, 12, 16, 20, 25 | Marine grade, lives outdoors untreated, weldable |
+| Aluminium 6061 | alu6061 | 4.76, 6.35, 7.94, 9.53, 12.7, 15.88, 19.05, 25.4 | Structural aluminium, strong, machines cleanly, stocked in imperial plate |
+| Stainless 304 | ss304 | 3, 4, 5, 6, 8, 10, 12, 16, 20, 25 | The everyday stainless, hard-wearing, food-safe |
+| Stainless 316 | ss316 | 6, 8, 10, 12, 16 | Marine stainless, best corrosion resistance, coastal-proof |
+| Mild steel (grade 250) | steel250 | 5, 6, 8, 10, 12, 16, 20, 25 | Strong and economical, paint or coat it for outdoor use |
+| Brass | brass | 0.8, 1, 1.2, 1.6, 2, 2.5, 3, 4, 5, 6 | Warm gold tone, decorative, develops a patina |
+| Copper | copper | 0.7, 0.9, 1.2, 1.6, 2, 3, 4 | Distinctive and conductive, patinas over time |
+<!--/kerf:materials-table-->
+
+6061 is stocked as imperial plate, so its thicknesses are the millimetre equivalents of 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4 and 1 inch. Quote them as the millimetre figures above; they are exact, not rounded.
 
 Anything else (thicker plate, other alloys, non-metals such as stone, glass, tile, rubber or plastics) is by request: hello@kerf.au with the part's size, material and thickness. Do not say KERF cannot cut it; say the instant quote does not price it.
 
@@ -26,7 +29,7 @@ Anything else (thicker plate, other alloys, non-metals such as stone, glass, til
 
 ## Weight
 
-Part weight is calculated from the net area, thickness and the material's density, and drives the delivery price at checkout. Densities used (g/cm³): aluminium 2.66 to 2.70, stainless 8.00, mild steel and corten 7.85, brass 8.50, copper 8.96.
+Part weight is calculated from the net area, thickness and the material's density, and drives the delivery price at checkout. Densities used (g/cm³): aluminium 2.66 to 2.70, stainless 8.00, mild steel 7.85, brass 8.50, copper 8.96.
 
 ## What is not documented
 
