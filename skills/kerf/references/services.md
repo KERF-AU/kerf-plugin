@@ -31,7 +31,7 @@ KERF (KERF CUTTING, ABN 94 497 289 449) is an online waterjet cutting service. U
 
 ## Lead time
 
-Parts are cut within 9 business days of payment. Delivery time is on top. KERF emails when parts ship. Do not promise a specific delivery date.
+Parts are cut within 15 business days of payment. Delivery time is on top. KERF emails when parts ship. Do not promise a specific delivery date.
 
 ## Shipping
 

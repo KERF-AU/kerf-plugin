@@ -5,7 +5,7 @@ description: Prepare and check flat parts for KERF, the online waterjet cutting 
 
 # KERF
 
-KERF cuts flat parts from your file on a waterjet in Melbourne and ships Australia-wide. Upload at https://kerf.au/quote, the price appears in seconds, pay online, parts are cut within 9 business days of payment.
+KERF cuts flat parts from your file on a waterjet in Melbourne and ships Australia-wide. Upload at https://kerf.au/quote, the price appears in seconds, pay online, parts are cut within 15 business days of payment.
 
 Use this skill as the single entry point for KERF. Use the MCP tools (server `https://kerf.au/mcp`, API key from the person's kerf.au account) when the task uploads a file, prices parts, builds a quote, returns a checkout link or checks an order. Use the references for fabrication facts. Without a connected MCP, everything that needs a price goes through the person opening https://kerf.au/quote in a browser.
 
