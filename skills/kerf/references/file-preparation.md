@@ -19,7 +19,7 @@ No file: build the part from a template in the quote workspace, or email a sketc
 
 ## Closed contours
 
-The jet follows outlines. The outer edge must be one closed loop and every hole another closed loop. Gaps where lines nearly meet, doubled-up lines and stray segments leave the checker unsure what is part and what is not. The checker flags what it cannot resolve as soon as the file lands, and the part card explains. The "Get help fixing it" link on the part sends the file and the problem to KERF.
+The cut follows outlines. The outer edge must be one closed loop and every hole another closed loop. Gaps where lines nearly meet, doubled-up lines and stray segments leave the checker unsure what is part and what is not. The checker flags what it cannot resolve as soon as the file lands, and the part card explains. The "Get help fixing it" link on the part sends the file and the problem to KERF.
 
 ## Layers and colours
 

@@ -1,6 +1,6 @@
 interface:
   display_name: "KERF"
-  short_description: "Quote and order waterjet-cut flat parts from KERF (Melbourne)"
+  short_description: "Quote and order waterjet and laser cut parts from KERF"
   default_prompt: "Use $kerf to price these files at KERF or answer my KERF cutting question."
 dependencies:
   tools:

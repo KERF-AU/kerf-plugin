@@ -4,7 +4,7 @@ Source: kerf.au/guides/ordering and kerf.au/terms, September 2026.
 
 ## Instant pricing
 
-- Upload at https://kerf.au/quote; the price appears in seconds, calculated from the actual geometry of the part. Changing material, thickness, finish or quantity reprices live. No account is needed to price or order.
+- Upload at https://kerf.au/quote; the price appears in seconds, calculated from the actual geometry of the part. Changing material, thickness or quantity reprices live. No account is needed to price or order.
 - Every quote gets a number (format KF-2609-7K3Q). Prices are in Australian dollars and include GST. Delivery is separate, added at checkout. An ABN tax invoice comes with every order.
 - Prices are held for 14 days from the date on the quote. A checkout that is started but not paid is kept for 7 days and then closed; the quote stays open for the full 14 days, so Checkout can simply be clicked again.
 - Never state a price yourself. The live quote is the only price.
@@ -12,9 +12,10 @@ Source: kerf.au/guides/ordering and kerf.au/terms, September 2026.
 ## What moves the price
 
 1. Material and thickness: thicker cuts slower and costs more.
-2. Cut length: the jet is priced by the distance it travels; every hole and slot adds to it. A detailed, lacy part costs more than a plain one of the same size.
+2. Cut length: a part is priced by the distance the cut travels; every hole and slot adds to it. A detailed, lacy part costs more than a plain one of the same size.
 3. Quantity: parts on the same order share the setup, so the unit price falls as quantity rises. Worth trying a few numbers.
-4. Finish: as cut, or deburring on parts up to 200 mm.
+
+There is no finish to choose. Every part is supplied as cut.
 
 ## Review before cutting
 
@@ -23,6 +24,8 @@ Every file is checked before it is cut. If a problem the automatic check missed 
 ## Checkout and payment
 
 Checkout opens KERF's online store (shop.kerf.au) with the quote's lines. Delivery is chosen there and paid with the parts. The agent never handles payment details; the person pays in the browser.
+
+A quote line whose material or thickness is currently unavailable cannot be ordered. The quote page marks the line "Currently unavailable", and Checkout is greyed out until the person chooses another thickness or material, or removes the line. Nothing is swapped for them.
 
 ## Lead time and shipping
 
